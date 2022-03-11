@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'ba-dashboard',
@@ -6,5 +6,6 @@ import {Component} from '@angular/core';
   styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent {
+  total: number = 254;
   constructor() {}
 }
