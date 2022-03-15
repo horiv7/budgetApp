@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { NavigationModule } from './shared/modules/navigation/navigation.module';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { DashboardModule } from './dashboard/dashboard.module';
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    DashboardModule
+    DashboardModule,
+    NavigationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
