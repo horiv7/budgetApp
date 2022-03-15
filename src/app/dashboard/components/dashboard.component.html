@@ -1,4 +1,8 @@
 <div class="banner">
-  <h1>{{ total | currency: "BAM" }}</h1>
+  <h1>{{ totalBudget | currency: "BAM" }}</h1>
 </div>
+<ba-budget-item-form
+  (formSubmit)="addItem($event)"
+  [initialValues]="initialValues"
+></ba-budget-item-form>
 <ba-budget-item-list></ba-budget-item-list>
