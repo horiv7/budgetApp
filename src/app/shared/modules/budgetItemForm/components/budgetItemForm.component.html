@@ -1,0 +1,38 @@
+<form
+  novalidate=""
+  [formGroup]="form"
+  (ngSubmit)="onSubmit()"
+  class="item-form"
+>
+  <table class="full-width" cellspacing="0">
+    <tr>
+      <td>
+        <mat-form-field class="e full-width" appearance="fill">
+          <mat-label>Description</mat-label>
+          <input matInput formControlName="description" />
+        </mat-form-field>
+      </td>
+      <td>
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>Amount</mat-label>
+          <input matInput formControlName="amount" />
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <div class="button-left full-width">
+          <button
+            mat-raised-button
+            color="primary"
+            [disabled]="form.invalid"
+            type="submit"
+          >
+            Save
+          </button>
+        </div>
+      </td>
+    </tr>
+  </table>
+</form>
